@@ -1,6 +1,6 @@
 async function main() {
   const [deployer] = await ethers.getSigners();
-  const Rps = await ethers.getContractFactory("RPS");
+  const Rps = await ethers.getContractFactory("Standard_Token");
   const rps = await Rps.deploy();
   await rps.deployed();
   console.log(rps.address)
